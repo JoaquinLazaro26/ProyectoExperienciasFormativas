@@ -1,0 +1,764 @@
+/* CSS Generales*/
+        *{
+            box-sizing: border-box;
+        }
+    body{
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    img{
+        padding: 0;
+        margin: 0;
+    }
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        padding: 0;
+        margin: 0;
+    }
+    hr{
+        text-align: center;
+        width: 100%;
+        padding: 1px;
+        margin: 0px;
+        border: 0;
+        color: gray;
+        background-color: gray;
+    }
+
+    /*Fin del CSS General*/
+
+
+/* Inicio CSS Iconos superiores*/
+
+    .Iconos_superiores-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 18pt;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: row;
+        height: 10%;
+    }
+
+    hr.vertical {
+        width: 0px;
+        height: 2em;
+        padding: 1px;
+        margin: 7px 0 7px 0;
+        align-items: center;
+        border: 1px white;
+    }
+    .Box_top-Header{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .Box_top-Header .iconos{
+        margin: auto 0px auto 50px;
+    }
+    .Empresas_venta-de-empresas__container{
+        display: flex;
+        align-items: center;
+    }
+    .movil_city-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Movil-City{
+        width: 8em;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 8px auto;
+        margin-left: 25px;
+    }
+
+    .iconos__redes-sociales{
+        width: 100%;
+        font-size: 18pt;
+        justify-content: space-around;
+        display: flex;
+        margin-top: 17px ;
+    }
+    .Icon{
+        width: 1.5em;
+        height: 1.5em;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+    }
+    .contacto{
+        text-align: justify;
+        font-size: 15pt;
+        margin-right: 1em;
+        color: whitesmoke;
+        margin-top: 1em;
+    }
+/*Fin de CSS Iconos Superiores*/
+
+
+/*Header del logo*/
+    .main-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff9f9+24,25b1f7+59,25b1f7+100 */
+         background: rgb(255,249,249); /* Old browsers */
+         background: -moz-linear-gradient(45deg,  rgba(255,249,249,1) 24%, rgba(37,177,247,1) 59%, rgba(37,177,247,1) 100%); /* FF3.6-15 */
+         background: -webkit-linear-gradient(45deg,  rgba(255,249,249,1) 24%,rgba(37,177,247,1) 59%,rgba(37,177,247,1) 100%); /* Chrome10-25,Safari5.1-6 */
+         background: linear-gradient(45deg,  rgba(255,249,249,1) 24%,rgba(37,177,247,1) 59%,rgba(37,177,247,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff9f9', endColorstr='#25b1f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ 
+    }
+    .logo{
+    text-align: left;
+    width: 90%;
+    height: 90%;
+    max-width: 200px;
+    max-height: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    }
+    .Barra-de-búsqueda{
+        padding: 9px 10px 9px 10px;
+        outline: none;
+        font-size: 18px;
+        border-radius: 15px;
+        color: #444;
+        border: 3px solid #7a7a7a;
+        background: #fff url("search-icon.png")
+        no repeat 9px center;
+        width: 800px;
+        transition: all .5s;
+    }
+    .Barra-de-búsqueda:hover{
+        background-color:#fff ;
+        box-shadow: 0 0 5px #6dcff680;
+    }
+
+    .main-header_btn{
+        border: 1px solid white; padding: 15px;
+    }
+    .main-header_btn:hover{
+        color: #b2ab8c;
+    }
+/*Cierre del header del logo*/
+
+
+/*Inicio de CSS del menú de navegación*/
+        .primary-navigation {
+      margin: 0 auto;
+      display: flex;
+      padding: 0 0 0 0;  
+      text-align: center;
+      font-size: 17px;
+      width: 100%;
+    }
+    .primary-navigation ul{
+        width: 100%;
+    }
+      .primary-navigation ul li.item {
+        list-style: none;
+        margin: 0 auto;
+        border-left: 2px solid #3ca0e7;
+        display: inline-block;
+        padding: 0 30px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        font-family: arvo;
+        width: auto;
+      }
+      .primary-navigation li a {
+        color: black;
+      }
+      .primary-navigation li a:hover {
+        color: #3ca0e7;
+      }
+      .primary-navigation li:hover {
+        cursor: pointer;
+      }
+      .primary-navigation ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+      }
+      .primary-navigation ul li:hover > ul,
+      .primary-navigation ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 250px;
+        text-align: left;
+        padding-top: 20px;
+        box-shadow: 0px 3px 5px -1px #ccc;
+        margin-bottom: 1em solid black;
+      }
+      .primary-navigation ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+        list-style-type: none;
+      }
+      .primary-navigation ul li ul li a{
+          padding-left: 10px;
+      }
+      .primary-navigation ul li ul li a:hover {
+        padding-left: 15px;
+        border-left: 2px solid #3ca0e7;
+        transition: all 0.3s ease;
+      }
+        a {
+        text-decoration: none;
+        color: whitesmoke;
+        }
+     a:hover{
+        color: #3CA0E7;
+   }
+   .primary-navigation ul li ul li a { transition: all 0.5s ease; }
+/*Fin del CSS menú de navegación*/
+/* Inicio css de Slider*/
+.slider{
+    width: 98%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 0px;
+    margin-bottom: 20px;
+    margin:auto;
+  }
+  .slider ul{
+      display: flex;
+      animation: cambio 20s infinite alternate linear;
+      width: 600%;
+      border-radius: 15px;
+      padding-left: 0px;
+  }
+  .slider li{
+      width: 100%;
+      list-style: none;
+      border-radius: 15px;
+  }
+  .slider img{
+      width: 100%;
+      height: 80%;
+      object-fit: inherit;
+      padding: auto;
+      border-radius: 15px;
+  }
+  @keyframes cambio{
+      0%{margin-left: 0;}
+      10%{margin-left: 0;}
+      
+      15%{margin-left: -100%;}
+      25%{margin-left: -100%;}
+      
+      30%{margin-left: -200%;}
+      45%{margin-left: -200%;}
+      
+      50%{margin-left: -300%;}
+      65%{margin-left: -300%;}
+
+      70%{margin-left: -400%;}
+      85%{margin-left: -400%;}
+
+      90%{margin-left: -500%;}
+      100%{margin-left: -500%;}
+ 
+  }
+/* Fin CSS de Slider*/
+
+
+/* Inicio CSS Mostrar Productos*/
+    .Main-container{
+        margin: auto;
+        height: 470px;
+
+        padding: 0px;
+    }
+    .Main-container h1{
+        text-align: center;
+    }
+    .container-card{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        max-width: 2500px;
+        margin: 10px auto;
+          
+    }
+    .card figure{
+        margin: auto;
+        width: auto
+        ;
+    }
+    .card{
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 6px;
+        overflow:hidden;
+        background:rgb(155, 216, 238);
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        transition: all 400ms ease-out;
+        cursor: default;  
+    }
+    .card:hover{
+        box-shadow: 7px 7px 20px rgba(0,0,0,0.4);
+        transform: translateY(-6%);
+    }
+    .card img{
+        width: 252px;
+        height: 210px;
+        margin-right:0px;
+        margin-left: 0px;
+    }
+    .card .contenido-card{
+        padding: 15px;
+        text-align: center;
+    }
+    .card .contenido-card h3{
+        margin-bottom: 10px;
+        color: black;
+    }
+    .card .contenido-card a{
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+        border: 1px solid gray;
+        border-radius: 4px;
+        transition: all 400ms ease;
+        margin-bottom: 5px;
+    }
+    .card .contenido-card a:hover{
+        background: #486064;
+        color: #fff;
+    }
+    @media only screen and (min-width:320px) and (max-width:768px){
+        
+        .card{
+            margin: 50px;;
+        }
+    }
+
+    /* Inicio venta de empresas*/
+
+ .x h1{
+    text-align: center;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+    font-size: 40px;
+
+}
+
+.descripcion {
+    height: 300px ;
+    width: 100% ;
+    margin: 60px 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.descripcion:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0,0.2);
+}
+/* fin venta de empresas*/
+
+/* Inicio movilcity*/
+
+.bloque1{
+    height: 250px ;
+    width: 165px ;
+    margin: 40px 52px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    float: left;
+}
+
+.bloque1:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0,0.2);
+}
+.bloque1 img {
+    height: 250px ;
+    width: 165px ;
+}
+/* fin movilcity*/
+/*Final CSS Mostrar Productos*/
+
+
+/* Inicio CSS Footer*/
+
+    footer {
+        width: 100%;
+        padding: 10px 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container_footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .box__footer-iframe{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        text-align: justify;
+        width: 73%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .box__footer{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        text-align: justify;
+        margin-right: 25px;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    .box__footer-contacto{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+        text-align: justify;
+    }
+    .box__footer p{
+        margin-left: 25px;
+    }
+    .box__footer .logo-footer{
+        text-align: center;
+    }
+    .box__footer .logo-footer img{
+        width: 300px;
+        height: 180px;
+    }
+    .box__footer .terms, .box__footer-contacto .terms {
+        max-width: 350px;
+        margin-top: 20px;
+        font-weight: 500;
+        color: #7a7a7a;
+        font-size: 15px;
+    }
+
+    .box__footer h2, .box__footer-contacto h2{
+        margin-top: 2em;
+        margin-bottom: 10px;
+        color: #343434;
+        font-weight: 700;
+    }
+
+    .box__footer a, .box__footer-contacto a{
+        margin-top: 10px;
+        color: #7a7a7a;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: left;
+        font-size: 15px;
+    }
+    .box__footer li, .box__footer-contacto li{
+        list-style-type: none;
+        color: #7a7a7a;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .box__footer ul, .box__footer-contacto ul{
+        padding: 0;
+    }
+    .box__footer a:hover, .box__footer-contacto a:hover{
+        opacity: 0.8;
+    }
+    .box__footer a .fab , .box__footer-contacto a .fab{
+        font-size: 15px;
+    }
+    .box__copyright {
+        width: 100%;
+        max-width:  1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px
+    }
+    .box__copyright p{
+        margin-top: 20px;
+        color: #7a7a7a;
+    }
+    .box__copyright hr {
+        border: none;
+        height: 1px;
+        background-color: #7a7a7a;
+    }
+    .box__footer iframe {
+        max-width: 100%;
+        font-weight: 500;
+        color: #7a7a7a;
+        font-size: 15px;
+    }
+/* Final CSS Footer*/
+
+/* Inicio CSS Nosotros*/
+.Container_Nosotros{
+width: 100%;
+padding: 15px 0;
+font-size: 12pt;
+display: flex;
+flex-wrap: wrap;
+text-align: justify;
+height: auto;
+margin: auto;
+}
+.Container_Nosotros h1{
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+.Container_Nosotros span{
+    text-align: justify;
+    padding: 0 25px;
+    font-weight: 500;
+}
+.Container_Nosotros .Nosotros{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.Box_Nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 15px;
+    width: 333.348px;
+    height: 200px;
+    margin-top: 15px;
+    float: left;
+    border-right: 0px;
+    font-size: 14px;
+    border-bottom: 0px solid;
+    font-weight: normal;
+}
+.Box_Nosotros-largo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 15px;
+    width: 333.348px;
+    height: 450px;
+    float: left;
+    border-right: 0px;
+    font-size: 14px;
+    border-bottom: 0px solid;
+    font-weight: normal;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.Box_Nosotros h2 ,.Box_Nosotros-largo h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 14pt;
+}
+.Box_Nosotros h3, .Box_Nosotros-largo h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14pt;
+}
+.Separador{
+    height: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #00adb5;
+}
+.Box-Responsabilidad{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    margin: 0;
+    max-height: 300px;
+}
+/*Fin CSS Nosotros*/
+
+/*Inicio CSS Soporte Técnico*/
+.Container__Soporte{
+width: 100%;
+padding: 15px 0;
+font-size: 12pt;
+height: auto;
+margin: auto;
+}
+.Container__Soporte h1{
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    padding-top: 20px;
+}
+.Container__Soporte{
+    padding: 0 25px;
+    font-weight: 500;
+}
+.Container__Soporte p{
+    text-align: justify;
+}
+.Container__Soporte img{
+    width: 98%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.Container__Soporte strong{
+    float: right;
+    font: 18px;
+}
+/*Fin CSS Soporte Técnico*/
+
+/*Inicio CSS Armados de pc*/
+.Container__Armados h1{
+    width: 100%;
+    text-align: center;
+    margin:0px;
+}
+.Container__Armados span{
+    font-size: 14px;
+}
+.Container__Armados{
+    padding: 0 25px;
+    font-weight: 500;
+}
+.Container__Armados img.ArmaPC{
+    width: 98%;
+    margin-bottom: 20px;
+    margin:auto;
+    display: flex;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+/*Fin CSS Armado de Pcs*/
+
+/*NO TOCAR :)*/
+.container-contact100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #e6e6e6;
+}
+/*FIN NO TOCAR :)*/
+.Container_Trabaja-con-Nosotros h1{
+    width: 100%;
+    text-align: center;
+    margin:0px;
+}
+.Container_Trabaja-con-Nosotros h2{
+    margin-left: 15px;
+}
+.Container_Trabaja-con-Nosotros img{
+    width: 98%;
+    margin-bottom: 20px;
+    margin:auto;
+    display: flex;
+    height: 400px;
+}
+.Container_Trabaja-con-Nosotros{
+    width: 100%;
+    padding: 15px 0;
+    font-size: 12pt;
+    height: auto;
+    margin: auto;
+}
+.Container_Trabaja-con-Nosotros strong{
+    float: right;
+    font: 18px;
+}
+.Container_Trabaja-con-Nosotros p{
+    text-align: justify;
+    margin-left: 15px;
+}
+/*Colores de la página Web para no estar buscando luego :)*/
+.Iconos_superiores-container{
+    background-color: #393e46;
+}
+.main-header{
+    background-color: #00adb5;
+}
+.primary-navigation {
+    background-color:lightcyan ;
+}
+.primary-navigation ul li ul {
+    background: lightcyan;
+  }
+  /* Color del contenido de las páginas*/
+.Main-container{
+    background-color: #aad8d3;
+}
+.Container_S-V{
+    background-color: #aad8d3;
+}
+.Container_Nosotros{
+    background-color: #aad8d3 ;
+}
+.Container__Soporte{
+    background-color: #aad8d3;
+}
+.Container__Armados{
+    background-color: #aad8d3;
+}
+.Container_Trabaja-con-Nosotros{
+    background-color: #aad8d3;
+}
+/* Cierre del color de las páginas*/
+footer{
+    background-color: #eeeeee;
+}
+
+/*------------------------------------------------------------------------------------*/

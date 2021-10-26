@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Libro de Reclamaciones | Infotec</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" href="../../imagenes/icono-tec.jpg">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../../css/1.css">
+    <link rel="stylesheet" type="text/css" href="../../css/util.css">
+    <link rel="stylesheet" type="text/css" href="../../css/x.css">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form" action="php/mail.php" method="post">
+                <span class="contact100-form-title">
+                    Libro de Reclamaciones Electrónico | Tecnovación
+                </span>
+                <div class="wrap-input100 validate-input bg1" data-validate="Ingrese sus nombres completos">
+                    <span class="label-input100">NOMBRES Y APELLIDOS *</span>
+                    <input id="nombres_apellidos" class="input100" type="text" name="nombres_apellidos" placeholder="Ingrese sus nombres completos">
+                </div>
+                <div class="wrap-input100 validate-input bg1" data-validate="Ingrese su numero de DNI">
+                    <span class="label-input100">N° DNI *</span>
+                    <input id="numero_dni" class="input100" type="text" name="numero_dni" placeholder="Ingrese su numero de DNI">
+                </div>
+                <div class="wrap-input100 validate-input bg1" data-validate="Ingrese su dirección física completa">
+                    <span class="label-input100">DIRECCION COMPLETA *</span>
+                    <input id="direccion" class="input100" type="text" name="direccion" placeholder="Ingrese su dirección física completa">
+                </div>
+                <div class="wrap-input100 validate-input bg1" data-validate="Ingrese la fecha de reclamo o queja">
+                    <span class="label-input100">FECHA DE RECLAMO O QUEJA *</span>
+                    <input id="fecha_reclamo" class="input100" type="date" name="fecha_reclamo" placeholder="Ingrese la fecha de reclamo o queja">
+                </div>
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Correo Electrónico (e@a.x)">
+                    <span class="label-input100">Email *</span>
+                    <input id="correo" class="input100" type="text" name="correo" placeholder="Correo Electrónico ">
+                </div>
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Teléfono</span>
+                    <input id="telefono" class="input100" type="text" name="telefono" placeholder="Teléfono">
+                </div>
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Ingresar numero de pedido">
+                    <span class="label-input100">Número de Pedido *</span>
+                    <input id="numero_pedido" class="input100" type="text" name="numero_pedido" placeholder="Ingresar numero de pedido ">
+                </div>
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Comprobante de Pago</span>
+                    <input id="comprobante_pago" class="input100" type="text" name="comprobante_pago" placeholder="Ingresar comprobante de pago">
+                </div>
+                <div class="wrap-input100 input100-select bg1">
+                    <span class="label-input100">Seleccione el bien contratado *</span>
+                    <div>
+                        <select id="bien_contratado" class="js-select2 select2-hidden-accessible" name="bien_contratado" tabindex="-1" aria-hidden="true">
+                            <option value="Producto">Producto</option>
+                            <option value="Servicio">Servicio</option>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 87px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-bien_contratado-container"><span class="select2-selection__rendered" id="select2-bien_contratado-container" title="Producto">Producto</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                </div>
+                <div class="w-full dis-none js-show-service">
+                    <div class="wrap-contact100-form-radio">
+                        <span class="label-input100">Seleccione el tipo de reclamación</span>
+                        <div class="contact100-form-radio m-t-15">
+                            <input class="input-radio100" id="reclamo" type="radio" name="reclamo" value="Reclamo">
+                            <label class="label-radio100" for="reclamo">
+                                Reclamo
+                            </label>
+                        </div>
+                        <div class="contact100-form-radio">
+                            <input class="input-radio100" id="queja" type="radio" name="reclamo" value="Queja">
+                            <label class="label-radio100" for="queja">
+                                Queja
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate="Ingresar su mensaje">
+                    <span class="label-input100">Detalles y/o acciones adoptadas por el vendedor</span>
+                    <textarea id="detalle_reclamo" class="input100" name="detalle_reclamo" placeholder="ingresar su mensaje..."></textarea>
+                </div>
+                <div class="wrap-input100" style="text-align: center; font: 16pt;">
+                    <span class="label-input100">Para imprimir esta página que contiene su hoja de reclamación, presione Ctrl + P antes de utilizar el botón de enviar.</span>
+                </div>
+                <div class="container-contact100-form-btn">
+                    <button type="submit" class="contact100-form-btn">
+                        <span>
+                            Enviar
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body></html>
